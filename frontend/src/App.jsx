@@ -4,8 +4,8 @@ import Home from "./pages/Home";
 import Interview from "./pages/Interview";
 import Report from "./pages/Report";
 import Progress from "./pages/Progress";
-import ResumeTips from "./pages/ResumeTips";
-import CodingRound from "./pages/Codinground";
+import Resumetips from "./pages/ResumeTips";
+import Codinground from "./pages/Codinground";
 
 function PrivateRoute({ children }) {
   const token = localStorage.getItem("token");
@@ -21,8 +21,8 @@ export default function App() {
       <Route path="/interview" element={<PrivateRoute><Interview /></PrivateRoute>} />
       <Route path="/report" element={<PrivateRoute><Report /></PrivateRoute>} />
       <Route path="/progress" element={<PrivateRoute><Progress /></PrivateRoute>} />
-      <Route path="/coding" element={<PrivateRoute><CodingRound /></PrivateRoute>} />
-      <Route path="/resume-tips" element={<PrivateRoute><ResumeTips /></PrivateRoute>} />
+      <Route path="/coding" element={<PrivateRoute><Codinground /></PrivateRoute>} />
+      <Route path="/resume-tips" element={<PrivateRoute><Resumetips /></PrivateRoute>} />
       <Route path="*" element={<Navigate to="/auth" replace />} />
     </Routes>
   );
