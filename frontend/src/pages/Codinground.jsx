@@ -30,7 +30,7 @@ const SECOND_FALLBACK_PROBLEM = {
   starterCode: "function numIslands(grid) {\n  // Use DFS or BFS\n}",
 };
 
-export default function CodingRound() {
+export default function Codinground() {
   const { state } = useLocation();
   const navigate = useNavigate();
   const { language, difficulty = "Medium", resume, jobDescription, interviewReport } = state || {};
@@ -48,7 +48,7 @@ export default function CodingRound() {
   const [askedTitles, setAskedTitles] = useState([]);
   const codingTimeLimit = difficulty === "Easy" ? 900 : difficulty === "Medium" ? 1200 : 1800;
 
-  const startCodingRound = async () => {
+  const startCodinground = async () => {
     try {
       await document.documentElement.requestFullscreen();
       setSecureMessage("");
@@ -152,7 +152,7 @@ export default function CodingRound() {
             <h2 className="text-xl font-bold">Coding Round</h2>
             <p className="text-sm text-gray-400">The coding round runs in fullscreen. Leaving fullscreen pauses your timer.</p>
             {secureMessage && <p className="text-xs text-red-400">{secureMessage}</p>}
-            <button onClick={startCodingRound} className="w-full py-3 rounded-xl bg-cyan-500 text-gray-950 font-bold text-sm">Enter Fullscreen & Start</button>
+            <button onClick={startCodinground} className="w-full py-3 rounded-xl bg-cyan-500 text-gray-950 font-bold text-sm">Enter Fullscreen & Start</button>
           </div>
         </div>
       )}

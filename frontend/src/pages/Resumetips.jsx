@@ -4,7 +4,7 @@ import axios from "axios";
 
 const API = axios.create({ baseURL: "http://localhost:5000/api/interview" });
 
-export default function ResumeTips() {
+export default function Resumetips() {
   const navigate = useNavigate();
   const [resume, setResume] = useState("");
   const [jobDescription, setJobDescription] = useState("");
