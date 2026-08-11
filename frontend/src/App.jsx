@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Interview from "./pages/Interview";
 import Report from "./pages/Report";
 import Progress from "./pages/Progress";
-import Resumetips from "./pages/ResumeTips";
+import Resumetips from "./pages/Resumetips";
 import Codinground from "./pages/Codinground";
 
 function PrivateRoute({ children }) {
